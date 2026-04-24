@@ -1,0 +1,21 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/.idea.acidphantasm-temporaryfixes.iml
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/.idea/
+/Client/release/
+/Client/obj/
+/Client/bin/
+/Server/obj/
+/Server/bin/
