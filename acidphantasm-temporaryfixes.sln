@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{DFD3477F-1A28-4760-8F56-BCF1AE43CD9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acidphantasm-temporaryfixes", "Server\acidphantasm-temporaryfixes.csproj", "{70CE8E05-7B7D-4499-AD11-00BB39391BC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{DFD3477F-1A28-4760-8F56-BCF1AE43CD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFD3477F-1A28-4760-8F56-BCF1AE43CD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFD3477F-1A28-4760-8F56-BCF1AE43CD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CE8E05-7B7D-4499-AD11-00BB39391BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CE8E05-7B7D-4499-AD11-00BB39391BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CE8E05-7B7D-4499-AD11-00BB39391BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CE8E05-7B7D-4499-AD11-00BB39391BC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

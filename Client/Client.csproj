@@ -98,19 +98,19 @@
         <ItemGroup>
             <OutputDLL Include="$(TargetPath)" />
             <License Include="$(ProjectDir)LICENSE" Condition="Exists('$(ProjectDir)LICENSE')" />
-            <!-- <ServerComponents Include="$(ProjectDir)../Server/bin/Release/$(AssemblyName)/*.*" /> -->
+            <ServerComponents Include="$(ProjectDir)../Server/bin/Release/$(AssemblyName)/*.*" />
             <!-- <WebAssets Include="$(ProjectDir)../Server/bin/Release/$(AssemblyName)/wwwroot/**/*.*" /> -->
         </ItemGroup>
 
         <!-- Copy to Tarkov plugin directory -->
         <Copy SourceFiles="@(OutputDLL);@(License)" DestinationFolder="$(TarkovDir)BepInEx\plugins\$(AssemblyName)\" />
-        <!-- <Copy SourceFiles="@(ServerComponents)" DestinationFolder="$(TarkovDir)SPT\user\mods\$(AssemblyName)\%(RecursiveDir)" /> -->
+        <Copy SourceFiles="@(ServerComponents)" DestinationFolder="$(TarkovDir)SPT\user\mods\$(AssemblyName)\%(RecursiveDir)" />
         <!-- <Copy SourceFiles="@(WebAssets)" DestinationFolder="$(TarkovDir)\SPT\user\mods\$(AssemblyName)\wwwroot\%(RecursiveDir)" /> -->
 
         <!-- Create release ZIP -->
         <RemoveDir Directories="$(ProjectDir)release" />
         <Copy SourceFiles="@(OutputDLL);@(License)" DestinationFolder="$(ProjectDir)release\$(AssemblyName)\BepInEx\plugins\$(AssemblyName)\" />
-        <!-- <Copy SourceFiles="@(ServerComponents)" DestinationFolder="$(ProjectDir)release\$(AssemblyName)\SPT\user\mods\$(AssemblyName)\%(RecursiveDir)" /> -->
+        <Copy SourceFiles="@(ServerComponents)" DestinationFolder="$(ProjectDir)release\$(AssemblyName)\SPT\user\mods\$(AssemblyName)\%(RecursiveDir)" />
         <!-- <Copy SourceFiles="@(WebAssets)" DestinationFolder="$(ProjectDir)release\$(AssemblyName)\SPT\user\mods\$(AssemblyName)\wwwroot\%(RecursiveDir)" /> -->
         <ZipDirectory SourceDirectory="$(ProjectDir)release\$(AssemblyName)\" DestinationFile="$(ProjectDir)release\$(AssemblyName).zip" />
     </Target>

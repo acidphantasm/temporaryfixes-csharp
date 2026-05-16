@@ -5,7 +5,7 @@ using BepInEx;
 
 namespace acidphantasm_temporaryfixes
 {
-    [BepInPlugin("com.acidphantasm.temporaryfixes", "acidphantasm-temporaryfixes", "4.0.0")]
+    [BepInPlugin("com.acidphantasm.temporaryfixes", "acidphantasm-temporaryfixes", "4.0.1")]
     public class Plugin : BaseUnityPlugin
     {
         private void Awake()
